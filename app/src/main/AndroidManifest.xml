@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.icomapp"
+    android:versionCode="1"
+    android:versionName="Sample">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:label="TestApp"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.testapplication.MainActivity"
+            android:label="Title"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
